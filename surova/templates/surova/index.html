@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Julia Surova</title>
+  <title>YULIIA Surova</title>
+
   <link rel="stylesheet" href="{% static 'surova/css/bootstrap.min.css' %}" type = "text/css"/>
   <link rel="stylesheet" href="{% static 'surova/css/scrolling-nav.css' %}" type = "text/css"/>
   <link href="static/surova/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -16,7 +17,9 @@
   {% block headin %}
   {% endblock %}
 </head>
+<body>
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+<div id="page-preloader"><p class="spinner"><img src="static/surova/img/gif.gif" alt=""></p></div>
 
 <div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
 
@@ -28,7 +31,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top">Julia Surova</a>
+                <a class="navbar-brand" href="#page-top">YULIIA Surova</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -60,7 +63,7 @@
                 <div class="col-lg-12">
                     <img class="img-responsive" style="max-width:200px;" src="static/surova/img/face.png" alt="">
                     <div class="intro-text">
-                        <h1 class="name">Julia Surova</h1>
+                        <h1 class="name">YULIIA Surova</h1>
 
                         <span class="skills">Architect - Urbanist - Beautiful girl</span>
                     </div>
@@ -280,7 +283,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Julia Surova 2017
+                        Copyright &copy; Yuliia Surova 2017
                     </div>
                 </div>
             </div>
@@ -399,9 +402,17 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="static/surova/js/bootstrap.min.js"></script>
 
-    <!-- Scrolling Nav JavaScript -->
+    <!-- Scrolling Nav JavaScript  -->
     <script src="static/surova/js/jquery.easing.min.js"></script>
     <script src="static/surova/js/scrolling-nav.js"></script>
+    <script>
+        $(window).on('load', function () {
+          var $preloader = $('#page-preloader'),
+              $spinner   = $preloader.find('.spinner');
+          $spinner.delay(1350).fadeOut();
+          $preloader.delay(1500).fadeOut('slow');
+      });
+    </script>
 
 </body>
 

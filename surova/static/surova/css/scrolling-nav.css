@@ -3,6 +3,25 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+ #page-preloader {
+     position: fixed;
+     left: 0;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     background: #000;
+     z-index: 100500;
+
+ }
+ #page-preloader .spinner{
+
+   text-align: center;
+   margin-top: 15%;
+
+ }
+ #page-preloader img {
+   max-width: 100%;
+   }
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
