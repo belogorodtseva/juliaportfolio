@@ -168,7 +168,17 @@ section h2 {
   margin: 0;
   font-size: 3em;
 }
+section.cv {
+
+  color: white;
+}
+
 section.postcards {
+  background-color: black;
+  color: black;
+}
+
+section.video {
 
   color: white;
 }
